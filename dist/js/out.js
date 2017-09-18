@@ -22444,14 +22444,69 @@ var _reactDom2 = _interopRequireDefault(_reactDom);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var Header = function (_React$Component) {
-    _inherits(Header, _React$Component);
+var HeaderMenu = function (_React$Component) {
+    _inherits(HeaderMenu, _React$Component);
+
+    function HeaderMenu() {
+        _classCallCheck(this, HeaderMenu);
+
+        return _possibleConstructorReturn(this, (HeaderMenu.__proto__ || Object.getPrototypeOf(HeaderMenu)).apply(this, arguments));
+    }
+
+    _createClass(HeaderMenu, [{
+        key: 'render',
+        value: function render() {
+
+            return _react2.default.createElement(
+                'ul',
+                { className: 'headerMenu' },
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'misja'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'oferta'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'personel'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'badania projektowe'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'galeria'
+                ),
+                _react2.default.createElement(
+                    'li',
+                    null,
+                    'kontakt'
+                )
+            );
+        }
+    }]);
+
+    return HeaderMenu;
+}(_react2.default.Component);
+
+var Header = function (_React$Component2) {
+    _inherits(Header, _React$Component2);
 
     function Header() {
         _classCallCheck(this, Header);
@@ -22462,8 +22517,21 @@ var Header = function (_React$Component) {
     _createClass(Header, [{
         key: 'render',
         value: function render() {
-            var style = {};
-            return _react2.default.createElement('div', { style: style });
+            var _style;
+
+            var style = (_style = {
+                // minHeight: '100%',
+                // minWidth: '100%',
+                width: '100vw',
+                height: '16.667vw',
+                background: 'pink'
+            }, _defineProperty(_style, 'background', 'url("img/header-image.jpg")'), _defineProperty(_style, 'backgroundPosition', 'center'), _defineProperty(_style, 'backgroundRepeat', 'no-repeat'), _defineProperty(_style, 'backgroundSize', 'contain'), _style);
+            console.log();
+            return _react2.default.createElement(
+                'div',
+                { style: style },
+                _react2.default.createElement(HeaderMenu, null)
+            );
         }
     }]);
 

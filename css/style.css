@@ -1,0 +1,16 @@
+.headerMenu{
+
+    color: white;
+    list-style-type:none;
+    float: right;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.headerMenu li
+{
+    display: inline;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid green;
+
+}
