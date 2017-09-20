@@ -3,9 +3,8 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a
     margin:0;
     padding: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
-html { font-size: 62.5%; }
-
 .clearfix::after {
     content: "";
     clear: both;
@@ -19,24 +18,21 @@ html { font-size: 62.5%; }
     margin: 0 auto;
 }
 .headerMenu{
-
-
     list-style-type:none;
     float: right;
-    font-size: 1.4rem;
+    font-size: 14px;
     text-transform: uppercase;
-    margin-top: 1.4rem;
+    margin-top: 14px;
 }
 .headerMenu li
 {
     display: inline;
-    /*margin: 1.4rem;*/
     color: #ffffff;
 
 }
 .headerMenu a
 {
-padding: 1.4rem;
+padding: 14px;
 }
 
 .headerMenu a:link
@@ -65,7 +61,12 @@ padding: 1.4rem;
     color: #ffffff;
 
 }
-
+#bannerSpace
+{
+    display:flex;
+    align-items:center;
+    height:16.667vw;
+}
 .banner
 {
 
@@ -78,8 +79,8 @@ padding: 1.4rem;
 h1.banner
 {
     display: inline-block;
-    font-size: 3rem;
-    line-height: 28rem;
+    font-size: 30px;
+
 }
 .mainSection{
     background: #333333;
@@ -93,4 +94,12 @@ h1.banner
     height: 300px;
     margin: 20px;
     background: #222222;
+}
+.shortcut h1
+{
+    font-size: 20px;
+}
+.shortcut p, .shortcut h1
+{
+    padding: 10px;
 }
