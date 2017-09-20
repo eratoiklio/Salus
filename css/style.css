@@ -4,39 +4,68 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a
     padding: 0;
     text-decoration: none;
 }
+html { font-size: 62.5%; }
+
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
 }
-.headerMenu{
 
-    color: white;
-    list-style-type:none;
-    float: right;
-    font-size: 4rem;
-    text-transform: uppercase;
-     margin-top: 5rem;
-}
-.headerMenu li
-{
-    display: inline;
-    padding: 1rem;
-    margin: 1rem;
-    border: 1px solid green;
-
-}
 .container
 {
     display: block;
     width: 80%;
     margin: 0 auto;
 }
+.headerMenu{
 
-#bannerSpace
-{
-    margin-top: 20rem;
+    
+    list-style-type:none;
+    float: right;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    margin-top: 1.4rem;
 }
+.headerMenu li
+{
+    display: inline;
+    margin: 1.4rem;
+    color: #ffffff;
+
+}
+.headerMenu a
+{
+padding: 1.4rem;
+}
+
+.headerMenu a:link
+{
+    color: #ffffff;
+
+}
+.headerMenu a:visited
+{
+
+    color: #666666;
+
+
+}
+.headerMenu a:hover
+{
+    background: #333333;
+    color: #ffffff;
+    font-weight:bold;
+
+
+}
+.headerMenu a:active
+{
+
+    color: #ffffff;
+
+}
+
 .banner
 {
 
@@ -49,20 +78,6 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a
 h1.banner
 {
     display: inline-block;
-    font-size: 10rem;
-    line-height: 20rem;
-}
-.arrow
-{
-font-size: 20rem;
-color: white;
-}
-.left-arrow
-{
-
-    float: left;
-}
-.right-arrow
-{
-    float: right;
+    font-size: 4rem;
+    line-height: 28rem;
 }

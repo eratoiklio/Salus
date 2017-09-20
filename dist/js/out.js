@@ -22464,10 +22464,9 @@ var HeaderMenu = function (_React$Component) {
     _createClass(HeaderMenu, [{
         key: 'render',
         value: function render() {
-
             return _react2.default.createElement(
                 'div',
-                { className: 'container', style: { background: "pink", border: "5px solid green" } },
+                { className: 'container' },
                 _react2.default.createElement(
                     'ul',
                     { className: 'headerMenu clearfix' },
@@ -22476,7 +22475,7 @@ var HeaderMenu = function (_React$Component) {
                         null,
                         _react2.default.createElement(
                             'a',
-                            { href: '#' },
+                            { href: 'http://thecodinglove.com/' },
                             'misja'
                         )
                     ),
@@ -22485,7 +22484,7 @@ var HeaderMenu = function (_React$Component) {
                         null,
                         _react2.default.createElement(
                             'a',
-                            { href: '#' },
+                            { href: '#2' },
                             'oferta'
                         )
                     ),
@@ -22494,7 +22493,7 @@ var HeaderMenu = function (_React$Component) {
                         null,
                         _react2.default.createElement(
                             'a',
-                            { href: '#' },
+                            { href: '#3' },
                             'personel'
                         )
                     ),
@@ -22503,7 +22502,7 @@ var HeaderMenu = function (_React$Component) {
                         null,
                         _react2.default.createElement(
                             'a',
-                            { href: '#' },
+                            { href: '#4' },
                             'badania projektowe'
                         )
                     ),
@@ -22512,7 +22511,7 @@ var HeaderMenu = function (_React$Component) {
                         null,
                         _react2.default.createElement(
                             'a',
-                            { href: '#' },
+                            { href: '#5' },
                             'galeria'
                         )
                     ),
@@ -22521,7 +22520,7 @@ var HeaderMenu = function (_React$Component) {
                         null,
                         _react2.default.createElement(
                             'a',
-                            { href: '#' },
+                            { href: '#6' },
                             'kontakt'
                         )
                     )
@@ -22589,24 +22588,11 @@ var Banner = function (_React$Component3) {
     _createClass(Banner, [{
         key: 'render',
         value: function render() {
+            //return <div id="bannerSpace" className="container clearfix"><p className="arrow left-arrow"> {"<"} </p><Motto></Motto><p className="arrow right-arrow"> {">"} </p></div>
             return _react2.default.createElement(
                 'div',
-                { id: 'bannerSpace', className: 'container clearfix' },
-                _react2.default.createElement(
-                    'p',
-                    { className: 'arrow left-arrow' },
-                    ' ',
-                    "<",
-                    ' '
-                ),
-                _react2.default.createElement(Motto, null),
-                _react2.default.createElement(
-                    'p',
-                    { className: 'arrow right-arrow' },
-                    ' ',
-                    ">",
-                    ' '
-                )
+                { id: 'bannerSpace', className: 'container' },
+                _react2.default.createElement(Motto, null)
             );
         }
     }]);
@@ -22635,7 +22621,7 @@ var Header = function (_React$Component4) {
                 height: '16.667vw',
                 background: 'pink'
             }, _defineProperty(_style, 'background', 'url("img/header-image.jpg")'), _defineProperty(_style, 'backgroundPosition', 'center'), _defineProperty(_style, 'backgroundRepeat', 'no-repeat'), _defineProperty(_style, 'backgroundSize', 'contain'), _style);
-            console.log();
+
             return _react2.default.createElement(
                 'div',
                 { style: style },
