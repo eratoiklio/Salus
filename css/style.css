@@ -1,3 +1,14 @@
+body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a
+{
+    margin:0;
+    padding: 0;
+    text-decoration: none;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
 .headerMenu{
 
     color: white;
@@ -5,6 +16,7 @@
     float: right;
     font-size: 4rem;
     text-transform: uppercase;
+     margin-top: 5rem;
 }
 .headerMenu li
 {
@@ -13,4 +25,44 @@
     margin: 1rem;
     border: 1px solid green;
 
+}
+.container
+{
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#bannerSpace
+{
+    margin-top: 20rem;
+}
+.banner
+{
+
+    width: 90%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+
+}
+h1.banner
+{
+    display: inline-block;
+    font-size: 10rem;
+    line-height: 20rem;
+}
+.arrow
+{
+font-size: 20rem;
+color: white;
+}
+.left-arrow
+{
+
+    float: left;
+}
+.right-arrow
+{
+    float: right;
 }
