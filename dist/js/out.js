@@ -9774,6 +9774,10 @@ var _header = __webpack_require__(184);
 
 var _header2 = _interopRequireDefault(_header);
 
+var _mainSection = __webpack_require__(185);
+
+var _mainSection2 = _interopRequireDefault(_mainSection);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -9795,7 +9799,12 @@ document.addEventListener('DOMContentLoaded', function () {
         _createClass(App, [{
             key: 'render',
             value: function render() {
-                return _react2.default.createElement(_header2.default, null);
+                return _react2.default.createElement(
+                    'div',
+                    null,
+                    _react2.default.createElement(_header2.default, null),
+                    _react2.default.createElement(_mainSection2.default, null)
+                );
             }
         }]);
 
@@ -22635,6 +22644,101 @@ var Header = function (_React$Component4) {
 }(_react2.default.Component);
 
 exports.default = Header;
+
+/***/ }),
+/* 185 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(49);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(57);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var Shortcut = function (_React$Component) {
+    _inherits(Shortcut, _React$Component);
+
+    function Shortcut() {
+        _classCallCheck(this, Shortcut);
+
+        return _possibleConstructorReturn(this, (Shortcut.__proto__ || Object.getPrototypeOf(Shortcut)).apply(this, arguments));
+    }
+
+    _createClass(Shortcut, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'article',
+                { className: 'shortcut' },
+                _react2.default.createElement('img', { src: this.props.img }),
+                _react2.default.createElement(
+                    'h1',
+                    null,
+                    this.props.title
+                ),
+                _react2.default.createElement(
+                    'p',
+                    null,
+                    this.props.short
+                )
+            );
+        }
+    }]);
+
+    return Shortcut;
+}(_react2.default.Component);
+
+var MainSection = function (_React$Component2) {
+    _inherits(MainSection, _React$Component2);
+
+    function MainSection() {
+        _classCallCheck(this, MainSection);
+
+        return _possibleConstructorReturn(this, (MainSection.__proto__ || Object.getPrototypeOf(MainSection)).apply(this, arguments));
+    }
+
+    _createClass(MainSection, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'mainSection' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(Shortcut, { title: 'oferta', img: 'img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' }),
+                    _react2.default.createElement(Shortcut, { title: 'badania projektowe', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' }),
+                    _react2.default.createElement(Shortcut, { title: 'o personelu ', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' }),
+                    _react2.default.createElement(Shortcut, { title: 'galeria', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' }),
+                    _react2.default.createElement(Shortcut, { title: 'kontakt', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' })
+                )
+            );
+        }
+    }]);
+
+    return MainSection;
+}(_react2.default.Component);
+
+exports.default = MainSection;
 
 /***/ })
 /******/ ]);
