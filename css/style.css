@@ -84,7 +84,15 @@ h1.banner
 }
 .mainSection{
     background: #333333;
+
     /*height: 100px;*/
+}
+.mainSection>div{
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
 }
 .shortcut
 {

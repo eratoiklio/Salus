@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Link from 'react-router';
+
 
 class HeaderMenu extends React.Component
 {
@@ -8,12 +10,12 @@ class HeaderMenu extends React.Component
         return(
             <div  className="container">
                 <ul className="headerMenu clearfix">
-                    <li><a href="http://thecodinglove.com/">misja</a></li>
-                    <li><a href="#2">oferta</a></li>
-                    <li><a href="#3">personel</a></li>
-                    <li><a href="#4">badania projektowe</a></li>
-                    <li><a href="#5">galeria</a></li>
-                    <li><a href="#6">kontakt</a></li>
+                    <li><Link to="/">misja</Link></li>
+                    <li><Link to="/">oferta</Link></li>
+                    <li><Link to="/">personel</Link></li>
+                    <li><Link to="/">badania projektowe</Link></li>
+                    <li><Link to="/gallery">galeria</Link></li>
+                    <li><Link to="/contact">kontakt</Link></li>
                 </ul>
             </div>
         )

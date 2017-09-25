@@ -1,20 +1,25 @@
-
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Header from './header.jsx';
-import MainSection from './mainSection.jsx';
-
-document.addEventListener('DOMContentLoaded', function(){
-
-
+import HomePage from './homePage.jsx';
+import ContactPage from './contactPage.jsx';
+import GalleryPage from './galleryPage.jsx';
+import {Router,
+Route,
+Link,
+IndexLink,
+IndexRoute,
+hashHistory} from 'react-router';
+document.addEventListener('DOMContentLoaded', function() {
 
     class App extends React.Component {
         render() {
-            return <div><Header /><MainSection/></div>
+            return <Router history={hashHistory}>
+                <Route path='/' component={HomePage}/>
+                <Route path='/contact' component={ContactPage}/>
+                <Route path='/gallery' component={GalleryPage}/>
+            </Router>
         }
     }
     ReactDOM.render(
-        <App />,
-        document.getElementById('app')
-    );
+        <App/>, document.getElementById('app'));
 });
