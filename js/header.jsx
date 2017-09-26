@@ -26,7 +26,7 @@ class Motto extends React.Component
     constructor(props)
     {
         super(props);
-        this.mottos=["wasze bezpieczeństwo jest naszym priorytetem","najlepszy sprzęt jest tylko tak dobry jak operator, który go obsluguje"];
+        this.mottos=["Wasze bezpieczeństwo jest naszym priorytetem","Najlepszy sprzęt jest tylko tak dobry jak operator, który go obsluguje"];
         this.state=
         {
             mottoId:0,

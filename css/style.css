@@ -63,6 +63,12 @@ padding: 14px;
     color: #ffffff;
 
 }
+.footer
+{
+    background: url("../img/header-image.jpg");
+    width: 100vw;
+    height: 150px;
+}
 #bannerSpace
 {
     display:flex;
@@ -102,7 +108,7 @@ h1.banner
     display: inline-block;
     width: 200px;
     height: 300px;
-    margin: 20px;
+    margin: 100px 20px;
     background: #222222;
 }
 .shortcut h1
