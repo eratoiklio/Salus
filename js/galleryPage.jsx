@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Gallery from './gallery.jsx';
 
-export default class ContactPage extends React.Component
+export default class GalleryPage extends React.Component
 {
     render()
     {
-        return <div>strona ze zdjęciami</div>
+        return <Gallery></Gallery>
     }
 }
