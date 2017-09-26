@@ -27635,6 +27635,8 @@ var _reactDom = __webpack_require__(20);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
+var _reactRouter = __webpack_require__(102);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -27697,8 +27699,16 @@ var MainSection = function (_React$Component2) {
                     _react2.default.createElement(Shortcut, { title: 'oferta', img: 'img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' }),
                     _react2.default.createElement(Shortcut, { title: 'badania projektowe', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' }),
                     _react2.default.createElement(Shortcut, { title: 'o personelu ', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' }),
-                    _react2.default.createElement(Shortcut, { title: 'galeria', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' }),
-                    _react2.default.createElement(Shortcut, { title: 'kontakt', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' })
+                    _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/gallery' },
+                        _react2.default.createElement(Shortcut, { title: 'galeria', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' })
+                    ),
+                    _react2.default.createElement(
+                        _reactRouter.Link,
+                        { to: '/contact' },
+                        _react2.default.createElement(Shortcut, { title: 'kontakt', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' })
+                    )
                 )
             );
         }
