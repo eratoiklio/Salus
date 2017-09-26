@@ -12,25 +12,31 @@ export default class GalleryPage extends React.Component
           {
             original: 'http://lorempixel.com/1000/600/nature/1/',
             thumbnail: 'http://lorempixel.com/250/150/nature/1/',
+            description: 'opis zdjęcia 1',
+            originalClass: 'picture'
           },
           {
             original: 'http://lorempixel.com/1000/600/nature/2/',
-            thumbnail: 'http://lorempixel.com/250/150/nature/2/'
+            thumbnail: 'http://lorempixel.com/250/150/nature/2/',
+            originalClass: 'picture'
+
           },
           {
             original: 'http://lorempixel.com/1000/600/nature/3/',
-            thumbnail: 'http://lorempixel.com/250/150/nature/3/'
+            thumbnail: 'http://lorempixel.com/250/150/nature/3/',
+            originalClass: 'picture'
+
           }
       ]
 
         return (
-        <div>
+        <div className="picture">
         <div>Szkolenie 1</div>
-        <Gallery images={images}/>
+        <Gallery images={images} useBrowserFullscreen="false"/>
         <div>Szkolenie 2</div>
-        <Gallery images={images}/>
+        <Gallery images={images} useBrowserFullscreen={false}/>
         <div>Pokaz</div>
-        <Gallery images={images}/>
+        <Gallery images={images} useBrowserFullscreen={false}/>
         </div>)
     }
 }
