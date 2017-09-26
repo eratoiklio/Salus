@@ -27749,7 +27749,7 @@ exports.default = ContactPage;
 
 
 Object.defineProperty(exports, "__esModule", {
-    value: true
+  value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -27775,22 +27775,55 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var GalleryPage = function (_React$Component) {
-    _inherits(GalleryPage, _React$Component);
+  _inherits(GalleryPage, _React$Component);
 
-    function GalleryPage() {
-        _classCallCheck(this, GalleryPage);
+  function GalleryPage() {
+    _classCallCheck(this, GalleryPage);
 
-        return _possibleConstructorReturn(this, (GalleryPage.__proto__ || Object.getPrototypeOf(GalleryPage)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (GalleryPage.__proto__ || Object.getPrototypeOf(GalleryPage)).apply(this, arguments));
+  }
+
+  _createClass(GalleryPage, [{
+    key: 'render',
+    value: function render() {
+
+      var images = [{
+        original: 'http://lorempixel.com/1000/600/nature/1/',
+        thumbnail: 'http://lorempixel.com/250/150/nature/1/'
+      }, {
+        original: 'http://lorempixel.com/1000/600/nature/2/',
+        thumbnail: 'http://lorempixel.com/250/150/nature/2/'
+      }, {
+        original: 'http://lorempixel.com/1000/600/nature/3/',
+        thumbnail: 'http://lorempixel.com/250/150/nature/3/'
+      }];
+
+      return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(
+          'div',
+          null,
+          'Szkolenie 1'
+        ),
+        _react2.default.createElement(_gallery2.default, { images: images }),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Szkolenie 2'
+        ),
+        _react2.default.createElement(_gallery2.default, { images: images }),
+        _react2.default.createElement(
+          'div',
+          null,
+          'Pokaz'
+        ),
+        _react2.default.createElement(_gallery2.default, { images: images })
+      );
     }
+  }]);
 
-    _createClass(GalleryPage, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(_gallery2.default, null);
-        }
-    }]);
-
-    return GalleryPage;
+  return GalleryPage;
 }(_react2.default.Component);
 
 exports.default = GalleryPage;
@@ -27828,16 +27861,16 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
-var MyGallery = function (_React$Component) {
-  _inherits(MyGallery, _React$Component);
+var Gallery = function (_React$Component) {
+  _inherits(Gallery, _React$Component);
 
-  function MyGallery() {
-    _classCallCheck(this, MyGallery);
+  function Gallery() {
+    _classCallCheck(this, Gallery);
 
-    return _possibleConstructorReturn(this, (MyGallery.__proto__ || Object.getPrototypeOf(MyGallery)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (Gallery.__proto__ || Object.getPrototypeOf(Gallery)).apply(this, arguments));
   }
 
-  _createClass(MyGallery, [{
+  _createClass(Gallery, [{
     key: 'handleImageLoad',
     value: function handleImageLoad(event) {
       console.log('Image loaded ', event.target);
@@ -27845,29 +27878,17 @@ var MyGallery = function (_React$Component) {
   }, {
     key: 'render',
     value: function render() {
-
-      var images = [{
-        original: 'http://lorempixel.com/1000/600/nature/1/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/1/'
-      }, {
-        original: 'http://lorempixel.com/1000/600/nature/2/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/2/'
-      }, {
-        original: 'http://lorempixel.com/1000/600/nature/3/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/3/'
-      }];
-
       return _react2.default.createElement(_reactImageGallery2.default, {
-        items: images,
+        items: this.props.images,
         slideInterval: 2000,
         onImageLoad: this.handleImageLoad });
     }
   }]);
 
-  return MyGallery;
+  return Gallery;
 }(_react2.default.Component);
 
-exports.default = MyGallery;
+exports.default = Gallery;
 
 /***/ }),
 /* 247 */
