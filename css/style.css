@@ -110,10 +110,20 @@ h1.banner
 {
     padding: 10px;
 }
+.galleryContainer{
+    padding: 50px 0;
+}
+.galleryContainer:nth-child(even) {background: #333}
+.galleryContainer:nth-child(odd) {background: #222}
 .picture
 {
     width: 50vw;
     margin: 0 auto;
+}
+.galleryTitle{
+    margin: 10px 0;
+    color:white;
+    font-size: 2rem;
 }
 .contactArea
 {

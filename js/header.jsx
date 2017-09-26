@@ -10,6 +10,7 @@ class HeaderMenu extends React.Component
         return(
             <div  className="container">
                 <ul className="headerMenu clearfix">
+                    <li><Link to="/">home</Link></li>
                     <li><Link to="/">misja</Link></li>
                     <li><Link to="/">oferta</Link></li>
                     <li><Link to="/">personel</Link></li>

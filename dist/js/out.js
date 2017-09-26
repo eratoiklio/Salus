@@ -25214,6 +25214,15 @@ var HeaderMenu = function (_React$Component) {
                         _react2.default.createElement(
                             _reactRouter.Link,
                             { to: '/' },
+                            'home'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'li',
+                        null,
+                        _react2.default.createElement(
+                            _reactRouter.Link,
+                            { to: '/' },
                             'misja'
                         )
                     ),
@@ -27840,7 +27849,7 @@ exports.default = ContactPage;
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -27866,61 +27875,85 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var GalleryPage = function (_React$Component) {
-  _inherits(GalleryPage, _React$Component);
+    _inherits(GalleryPage, _React$Component);
 
-  function GalleryPage() {
-    _classCallCheck(this, GalleryPage);
+    function GalleryPage() {
+        _classCallCheck(this, GalleryPage);
 
-    return _possibleConstructorReturn(this, (GalleryPage.__proto__ || Object.getPrototypeOf(GalleryPage)).apply(this, arguments));
-  }
-
-  _createClass(GalleryPage, [{
-    key: 'render',
-    value: function render() {
-
-      var images = [{
-        original: 'http://lorempixel.com/1000/600/nature/1/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/1/',
-        description: 'opis zdjęcia 1',
-        originalClass: 'picture'
-      }, {
-        original: 'http://lorempixel.com/1000/600/nature/2/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/2/',
-        originalClass: 'picture'
-
-      }, {
-        original: 'http://lorempixel.com/1000/600/nature/3/',
-        thumbnail: 'http://lorempixel.com/250/150/nature/3/',
-        originalClass: 'picture'
-
-      }];
-
-      return _react2.default.createElement(
-        'div',
-        { className: 'picture' },
-        _react2.default.createElement(
-          'div',
-          null,
-          'Szkolenie 1'
-        ),
-        _react2.default.createElement(_gallery2.default, { images: images, useBrowserFullscreen: 'false' }),
-        _react2.default.createElement(
-          'div',
-          null,
-          'Szkolenie 2'
-        ),
-        _react2.default.createElement(_gallery2.default, { images: images, useBrowserFullscreen: false }),
-        _react2.default.createElement(
-          'div',
-          null,
-          'Pokaz'
-        ),
-        _react2.default.createElement(_gallery2.default, { images: images, useBrowserFullscreen: false })
-      );
+        return _possibleConstructorReturn(this, (GalleryPage.__proto__ || Object.getPrototypeOf(GalleryPage)).apply(this, arguments));
     }
-  }]);
 
-  return GalleryPage;
+    _createClass(GalleryPage, [{
+        key: 'render',
+        value: function render() {
+
+            var images = [{
+                original: 'http://lorempixel.com/1000/600/nature/1/',
+                thumbnail: 'http://lorempixel.com/250/150/nature/1/',
+                description: 'opis zdjęcia 1',
+                originalClass: 'picture'
+            }, {
+                original: 'http://lorempixel.com/1000/600/nature/2/',
+                thumbnail: 'http://lorempixel.com/250/150/nature/2/',
+                originalClass: 'picture'
+
+            }, {
+                original: 'http://lorempixel.com/1000/600/nature/3/',
+                thumbnail: 'http://lorempixel.com/250/150/nature/3/',
+                originalClass: 'picture'
+
+            }];
+
+            return _react2.default.createElement(
+                'div',
+                null,
+                _react2.default.createElement(
+                    'div',
+                    { className: 'galleryContainer' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'picture' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'galleryTitle' },
+                            'Szkolenie 1'
+                        ),
+                        _react2.default.createElement(_gallery2.default, { images: images })
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'galleryContainer' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'picture' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'galleryTitle' },
+                            'Szkolenie 2'
+                        ),
+                        _react2.default.createElement(_gallery2.default, { images: images })
+                    )
+                ),
+                _react2.default.createElement(
+                    'div',
+                    { className: 'galleryContainer' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'picture' },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'galleryTitle' },
+                            'Pokaz'
+                        ),
+                        _react2.default.createElement(_gallery2.default, { images: images })
+                    )
+                )
+            );
+        }
+    }]);
+
+    return GalleryPage;
 }(_react2.default.Component);
 
 exports.default = GalleryPage;
