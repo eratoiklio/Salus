@@ -12946,6 +12946,10 @@ var _galleryPage = __webpack_require__(245);
 
 var _galleryPage2 = _interopRequireDefault(_galleryPage);
 
+var _mainSection = __webpack_require__(243);
+
+var _mainSection2 = _interopRequireDefault(_mainSection);
+
 var _reactRouter = __webpack_require__(102);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -12972,9 +12976,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 return _react2.default.createElement(
                     _reactRouter.Router,
                     { history: _reactRouter.hashHistory },
-                    _react2.default.createElement(_reactRouter.Route, { path: '/', component: _homePage2.default }),
-                    _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contactPage2.default }),
-                    _react2.default.createElement(_reactRouter.Route, { path: '/gallery', component: _galleryPage2.default })
+                    _react2.default.createElement(
+                        _reactRouter.Route,
+                        { path: '/', component: _homePage2.default },
+                        _react2.default.createElement(_reactRouter.IndexRoute, { component: _mainSection2.default }),
+                        _react2.default.createElement(_reactRouter.Route, { path: '/contact', component: _contactPage2.default }),
+                        _react2.default.createElement(_reactRouter.Route, { path: '/gallery', component: _galleryPage2.default })
+                    )
                 );
             }
         }]);
@@ -25138,7 +25146,7 @@ var HomePage = function (_React$Component) {
                 'div',
                 null,
                 _react2.default.createElement(_header2.default, null),
-                _react2.default.createElement(_mainSection2.default, null),
+                this.props.children,
                 _react2.default.createElement(_footer2.default, null)
             );
         }

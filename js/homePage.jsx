@@ -4,12 +4,8 @@ import Header from './header.jsx';
 import MainSection from './mainSection.jsx';
 import Footer from './footer.jsx';
 
-
-
-
-
     export default class HomePage extends React.Component {
         render() {
-            return <div><Header /><MainSection/><Footer/></div>
+            return <div><Header />{this.props.children}<Footer/></div>
         }
     }
