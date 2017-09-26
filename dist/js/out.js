@@ -27666,8 +27666,86 @@ var ContactPage = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                null,
-                'strona z kontaktem'
+                { className: 'contactArea' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container contactContainer' },
+                    _react2.default.createElement('div', { className: 'contactBG' }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'half' },
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'contactHeader' },
+                                'mail'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'salus-eod@home.pl'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'contactHeader' },
+                                'telefon'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                '+48 609 117 227'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'contactHeader' },
+                                'adres'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                'Kombajnist\xF3w 19a, 04-679 Warszawa'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'contactHeader' },
+                                'nip'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                '575-00071-21'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            null,
+                            _react2.default.createElement(
+                                'p',
+                                { className: 'contactHeader' },
+                                'regon'
+                            ),
+                            _react2.default.createElement(
+                                'p',
+                                null,
+                                '142214952'
+                            )
+                        )
+                    )
+                )
             );
         }
     }]);
