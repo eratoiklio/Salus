@@ -72,7 +72,7 @@ export default class Header extends React.Component {
         };
 
         return (
-            <div style={style}><HeaderMenu/><Banner/></div>
+            <div id="headerSpace" style={style}><HeaderMenu/><Banner/></div>
         );
     }
 }

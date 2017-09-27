@@ -12132,9 +12132,13 @@ var _reactDom = __webpack_require__(16);
 
 var _reactDom2 = _interopRequireDefault(_reactDom);
 
-var _homePage = __webpack_require__(208);
+var _header = __webpack_require__(209);
 
-var _homePage2 = _interopRequireDefault(_homePage);
+var _header2 = _interopRequireDefault(_header);
+
+var _footer = __webpack_require__(236);
+
+var _footer2 = _interopRequireDefault(_footer);
 
 var _contactPage = __webpack_require__(237);
 
@@ -12196,7 +12200,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     _react2.default.createElement(
                         'div',
                         null,
-                        _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _homePage2.default }),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _header2.default }),
                         _react2.default.createElement(
                             _reactRouterDom.Switch,
                             null,
@@ -12204,7 +12208,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             _react2.default.createElement(_reactRouterDom.Route, { path: '/employees', component: _employees2.default }),
                             _react2.default.createElement(_reactRouterDom.Route, { path: '/contact', component: _contactPage2.default }),
                             _react2.default.createElement(_reactRouterDom.Route, { path: '/gallery', component: _galleryPage2.default })
-                        )
+                        ),
+                        _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _footer2.default })
                     )
                 );
             }
@@ -24120,74 +24125,7 @@ module.exports = ReactDOMInvalidARIAHook;
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 208 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-
-
-Object.defineProperty(exports, "__esModule", {
-    value: true
-});
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _react = __webpack_require__(4);
-
-var _react2 = _interopRequireDefault(_react);
-
-var _reactDom = __webpack_require__(16);
-
-var _reactDom2 = _interopRequireDefault(_reactDom);
-
-var _header = __webpack_require__(209);
-
-var _header2 = _interopRequireDefault(_header);
-
-var _mainSection = __webpack_require__(105);
-
-var _mainSection2 = _interopRequireDefault(_mainSection);
-
-var _footer = __webpack_require__(236);
-
-var _footer2 = _interopRequireDefault(_footer);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-var HomePage = function (_React$Component) {
-    _inherits(HomePage, _React$Component);
-
-    function HomePage() {
-        _classCallCheck(this, HomePage);
-
-        return _possibleConstructorReturn(this, (HomePage.__proto__ || Object.getPrototypeOf(HomePage)).apply(this, arguments));
-    }
-
-    _createClass(HomePage, [{
-        key: 'render',
-        value: function render() {
-            return _react2.default.createElement(
-                'div',
-                null,
-                _react2.default.createElement(_header2.default, null),
-                this.props.children,
-                _react2.default.createElement(_footer2.default, null)
-            );
-        }
-    }]);
-
-    return HomePage;
-}(_react2.default.Component);
-
-exports.default = HomePage;
-
-/***/ }),
+/* 208 */,
 /* 209 */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -24401,7 +24339,7 @@ var Header = function (_React$Component4) {
 
             return _react2.default.createElement(
                 'div',
-                { style: style },
+                { id: 'headerSpace', style: style },
                 _react2.default.createElement(HeaderMenu, null),
                 _react2.default.createElement(Banner, null)
             );
@@ -27425,18 +27363,18 @@ var GalleryPage = function (_React$Component) {
         value: function render() {
 
             var images = [{
-                original: 'http://lorempixel.com/1000/600/nature/1/',
-                thumbnail: 'http://lorempixel.com/250/150/nature/1/',
+                original: './img/photo1.jpg',
+                thumbnail: './img/photo2_small.jpg',
                 description: 'opis zdjęcia 1',
                 originalClass: 'picture'
             }, {
-                original: 'http://lorempixel.com/1000/600/nature/2/',
-                thumbnail: 'http://lorempixel.com/250/150/nature/2/',
+                original: './img/photo2.jpg',
+                thumbnail: './img/photo2_small.jpg',
                 originalClass: 'picture'
 
             }, {
-                original: 'http://lorempixel.com/1000/600/nature/3/',
-                thumbnail: 'http://lorempixel.com/250/150/nature/3/',
+                original: './img/photo3.jpg',
+                thumbnail: './img/photo3_small.jpg',
                 originalClass: 'picture'
 
             }];
@@ -27446,7 +27384,7 @@ var GalleryPage = function (_React$Component) {
                 null,
                 _react2.default.createElement(
                     'div',
-                    { className: 'galleryContainer' },
+                    { id: 'galleryContainer1', className: 'galleryContainer' },
                     _react2.default.createElement(
                         'div',
                         { id: 'gallery1', className: 'picture' },
@@ -27460,7 +27398,7 @@ var GalleryPage = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     'div',
-                    { className: 'galleryContainer' },
+                    { id: 'galleryContainer2', className: 'galleryContainer' },
                     _react2.default.createElement(
                         'div',
                         { id: 'gallery2', className: 'picture' },
@@ -27474,7 +27412,7 @@ var GalleryPage = function (_React$Component) {
                 ),
                 _react2.default.createElement(
                     'div',
-                    { className: 'galleryContainer' },
+                    { id: 'galleryContainer1', className: 'galleryContainer' },
                     _react2.default.createElement(
                         'div',
                         { id: 'gallery3', className: 'picture' },
@@ -29898,7 +29836,7 @@ var Employees = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 _reactRouterHashLink.HashLink,
-                { to: '/gallery#gallery3' },
+                { to: '/gallery#galleryContainer1' },
                 _react2.default.createElement('div', { style: { backgroundColor: "pink", width: "300px", height: "300px" } })
             );
         }

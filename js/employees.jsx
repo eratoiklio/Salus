@@ -5,6 +5,6 @@ export default class Employees extends React.Component
 {
     render()
     {
-        return <Link to="/gallery#gallery3"><div style={{backgroundColor:"pink", width: "300px", height:"300px"}}></div></Link>
+        return <Link to="/gallery#galleryContainer1"><div style={{backgroundColor:"pink", width: "300px", height:"300px"}}></div></Link>
     }
 }

@@ -79,10 +79,12 @@ padding: 14px;
     margin: 0 auto;
     color: white;
     text-align: center;
+
 }
 h1.banner
 {
-    display: inline-block;
+    align-self: center;
+    /*display: inline-block;*/
     font-size: 2vw;
 }
 .mainSection{
@@ -112,18 +114,23 @@ h1.banner
 }
 .galleryContainer{
     padding: 50px 0;
+    display: flex;
+    justify-content:center;
+    height:40vw;
+    box-sizing: content-box;
 }
 .galleryContainer:nth-child(even) {background: #333}
 .galleryContainer:nth-child(odd) {background: #222}
 .picture
 {
     width: 50vw;
-    margin: 0 auto;
+    align-self: center;
+    /*margin: 0 auto;*/
 }
 .galleryTitle{
     margin: 10px 0;
     color:white;
-    font-size: 2rem;
+    font-size: 1.5vw;
 }
 .contactArea
 {

@@ -4,23 +4,24 @@ import Gallery from './gallery.jsx';
 
 export default class GalleryPage extends React.Component
 {
+
     render()
     {
 
         const images = [
             {
-                original: 'http://lorempixel.com/1000/600/nature/1/',
-                thumbnail: 'http://lorempixel.com/250/150/nature/1/',
+                original: './img/photo1.jpg',
+                thumbnail: './img/photo2_small.jpg',
                 description: 'opis zdjęcia 1',
                 originalClass: 'picture'
             }, {
-                original: 'http://lorempixel.com/1000/600/nature/2/',
-                thumbnail: 'http://lorempixel.com/250/150/nature/2/',
+                original: './img/photo2.jpg',
+                thumbnail: './img/photo2_small.jpg',
                 originalClass: 'picture'
 
             }, {
-                original: 'http://lorempixel.com/1000/600/nature/3/',
-                thumbnail: 'http://lorempixel.com/250/150/nature/3/',
+                original: './img/photo3.jpg',
+                thumbnail: './img/photo3_small.jpg',
                 originalClass: 'picture'
 
             }
@@ -28,19 +29,19 @@ export default class GalleryPage extends React.Component
 
         return (
             <div>
-                <div className='galleryContainer'>
+                <div id="galleryContainer1" className='galleryContainer'>
                     <div id="gallery1" className="picture">
                         <div className="galleryTitle">Szkolenie 1</div>
                         <Gallery images={images}/>
                     </div>
                 </div>
-                <div className='galleryContainer'>
+                <div id="galleryContainer2" className='galleryContainer'>
                     <div id="gallery2" className="picture">
                         <div className="galleryTitle">Szkolenie 2</div>
                         <Gallery images={images}/>
                     </div>
                 </div>
-                <div  className='galleryContainer'>
+                <div  id="galleryContainer1" className='galleryContainer'>
                     <div id="gallery3" className="picture">
                         <div className="galleryTitle">Pokaz</div>
                         <Gallery images={images}/>

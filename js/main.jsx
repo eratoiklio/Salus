@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import HomePage from './homePage.jsx';
+import Header from './header.jsx';
+import Footer from './footer.jsx';
 import ContactPage from './contactPage.jsx';
 import GalleryPage from './galleryPage.jsx';
 import MainSection from './mainSection.jsx';
@@ -30,14 +31,14 @@ document.addEventListener('DOMContentLoaded', function() {
     //   )
       return <Router>
       <div>
-      <Route path='/' component={HomePage} />
+      <Route path='/' component={Header} />
       <Switch>
         <Route exact path='/' component={MainSection} />
         <Route path='/employees' component={Employees}/>
         <Route path='/contact' component={ContactPage}/>
         <Route path='/gallery' component={GalleryPage}/>
       </Switch>
-
+       <Route path='/' component={Footer} />
      </div>
      </Router>
 
