@@ -4,25 +4,46 @@ import HomePage from './homePage.jsx';
 import ContactPage from './contactPage.jsx';
 import GalleryPage from './galleryPage.jsx';
 import MainSection from './mainSection.jsx';
-import {Router,
+import Employees from './employees.jsx';
+import {BrowserRouter as Router,
 Route,
-Link,
 IndexLink,
 IndexRoute,
-hashHistory} from 'react-router';
+hashHistory,
+Switch
+} from 'react-router-dom';
+import createHistory from 'history/createBrowserHistory';
+import { HashLink as Link } from 'react-router-hash-link';
+
 document.addEventListener('DOMContentLoaded', function() {
 
     class App extends React.Component {
         render() {
-            return <Router history={hashHistory}>
-            <Route path='/' component={HomePage}>
-                <IndexRoute component={MainSection}/>
-                <Route path='/contact' component={ContactPage}/>
-                <Route path='/gallery' component={GalleryPage}/>
-                </Route>
-            </Router>
+            // const history = createHistory();
+    //         const HomePage =() =>(
+    //       <Switch>
+    //         <Route exact path='/' component={MainSection} />
+    //         <Route path='/employees' component={Employees}/>
+    //         <Route path='/contact' component={ContactPage}/>
+    //         <Route path='/gallery' component={GalleryPage}/>
+    //       </Switch>
+    //   )
+      return <Router>
+      <div>
+      <Route path='/' component={HomePage} />
+      <Switch>
+        <Route exact path='/' component={MainSection} />
+        <Route path='/employees' component={Employees}/>
+        <Route path='/contact' component={ContactPage}/>
+        <Route path='/gallery' component={GalleryPage}/>
+      </Switch>
+
+     </div>
+     </Router>
+
         }
     }
+
     ReactDOM.render(
         <App/>, document.getElementById('app'));
 });

@@ -29,19 +29,19 @@ export default class GalleryPage extends React.Component
         return (
             <div>
                 <div className='galleryContainer'>
-                    <div className="picture">
+                    <div id="gallery1" className="picture">
                         <div className="galleryTitle">Szkolenie 1</div>
                         <Gallery images={images}/>
                     </div>
                 </div>
                 <div className='galleryContainer'>
-                    <div className="picture">
+                    <div id="gallery2" className="picture">
                         <div className="galleryTitle">Szkolenie 2</div>
                         <Gallery images={images}/>
                     </div>
                 </div>
-                <div className='galleryContainer'>
-                    <div className="picture">
+                <div  className='galleryContainer'>
+                    <div id="gallery3" className="picture">
                         <div className="galleryTitle">Pokaz</div>
                         <Gallery images={images}/>
                     </div>

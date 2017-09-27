@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {Link} from 'react-router';
+import {HashLink as Link} from 'react-router-hash-link';
 
 
 class HeaderMenu extends React.Component
@@ -13,8 +13,8 @@ class HeaderMenu extends React.Component
                     <li><Link to="/">home</Link></li>
                     <li><Link to="/">misja</Link></li>
                     <li><Link to="/">oferta</Link></li>
-                    <li><Link to="/">personel</Link></li>
-                    <li><Link to="/">badania projektowe</Link></li>
+                    <li><Link to="/employees">personel</Link></li>
+                    <li><Link to="/gallery#gallery2">badania projektowe</Link></li>
                     <li><Link to="/gallery">galeria</Link></li>
                     <li><Link to="/contact">kontakt</Link></li>
                 </ul>
