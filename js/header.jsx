@@ -56,8 +56,9 @@ class HeaderMenu extends React.Component
             <div className="menuContainer">
                 <div className="headerMenu">
                     <MediaQuery maxDeviceWidth={884}>
-                        <div id="hamburger" onClick={this.handleClick}>&#9776;</div>
+                        <div id="hamburger" onClick={this.handleClick}>&#9776;
                         {this.state.clicked ? <NavList class="phoneMenu"/>: null}
+                        </div>
                     </MediaQuery>
                     <MediaQuery minDeviceWidth={884}>
                         <NavList class="desktopMenu"/>

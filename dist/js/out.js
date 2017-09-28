@@ -24175,9 +24175,9 @@ var HeaderMenu = function (_React$Component2) {
                             _react2.default.createElement(
                                 'div',
                                 { id: 'hamburger', onClick: this.handleClick },
-                                '\u2630'
-                            ),
-                            this.state.clicked ? _react2.default.createElement(NavList, { 'class': 'phoneMenu' }) : null
+                                '\u2630',
+                                this.state.clicked ? _react2.default.createElement(NavList, { 'class': 'phoneMenu' }) : null
+                            )
                         ),
                         _react2.default.createElement(
                             _reactResponsive2.default,

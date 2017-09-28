@@ -6,12 +6,6 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a
     box-sizing: border-box;
 }
 
-/*.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}*/
-
 .container
 {
     display: block;
@@ -50,6 +44,7 @@ display: inline;
     position: absolute;
     top: 30px;
     right: 5vw;
+    z-index: 5;
 
 }
 .phoneMenu li{
