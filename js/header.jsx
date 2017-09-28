@@ -5,10 +5,11 @@ import MediaQuery from 'react-responsive';
 
 class NavList extends React.Component
 {
+
     render()
     {
         return (
-            <ul >
+            <ul className={this.props.class}>
                 <li>
                     <Link to="/">home</Link>
                 </li>
@@ -52,14 +53,16 @@ class HeaderMenu extends React.Component
 
         return (
             <div className="container">
-                <div className="headerMenu clearfix">
+            <div className="menuContainer">
+                <div className="headerMenu">
                     <MediaQuery maxDeviceWidth={884}>
                         <div id="hamburger" onClick={this.handleClick}>&#9776;</div>
-                        {this.state.clicked ? <NavList/>: null}
+                        {this.state.clicked ? <NavList class="phoneMenu"/>: null}
                     </MediaQuery>
                     <MediaQuery minDeviceWidth={884}>
-                        <NavList/>
+                        <NavList class="desktopMenu"/>
                     </MediaQuery>
+                </div>
                 </div>
             </div>
         )

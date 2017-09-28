@@ -6,11 +6,11 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a
     box-sizing: border-box;
 }
 
-.clearfix::after {
+/*.clearfix::after {
     content: "";
     clear: both;
     display: table;
-}
+}*/
 
 .container
 {
@@ -18,21 +18,49 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a
     width: 80vw;
     margin: 0 auto;
 }
+.menuContainer
+{
+    display: flex;
+    justify-content: flex-end;
+}
 .headerMenu{
-    list-style-type:none;
-    float: right;
+
     font-size: 14px;
     text-transform: uppercase;
     margin-top: 14px;
     color: #ffffff;
-}
+    }
+.headerMenu li{
+    list-style-type:none;
 
-.headerMenu li
-{
-    display: inline;
     color: #ffffff;
 }
+.desktopMenu li
+{
+display: inline;
 
+}
+
+#hamburger
+{
+
+}
+/* TODO: ponieważ phoneManu nie jest w #hamburger absolute odsni sie do okna*/
+.phoneMenu
+{
+    position: absolute;
+    top: 30px;
+    right: 5vw;
+
+}
+/* TODO: nie zgadzają się wielkości(zmienić na kolor tła zobaczyć i naprawić)*/
+.phoneMenu li{
+background:#222;
+border-bottom: 1px solid white;
+padding: 10px;
+
+
+}
 .headerMenu a
 {
 padding: 14px;

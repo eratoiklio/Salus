@@ -24066,7 +24066,7 @@ var NavList = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'ul',
-                null,
+                { className: this.props.class },
                 _react2.default.createElement(
                     'li',
                     null,
@@ -24165,21 +24165,25 @@ var HeaderMenu = function (_React$Component2) {
                 { className: 'container' },
                 _react2.default.createElement(
                     'div',
-                    { className: 'headerMenu clearfix' },
+                    { className: 'menuContainer' },
                     _react2.default.createElement(
-                        _reactResponsive2.default,
-                        { maxDeviceWidth: 884 },
+                        'div',
+                        { className: 'headerMenu' },
                         _react2.default.createElement(
-                            'div',
-                            { id: 'hamburger', onClick: this.handleClick },
-                            '\u2630'
+                            _reactResponsive2.default,
+                            { maxDeviceWidth: 884 },
+                            _react2.default.createElement(
+                                'div',
+                                { id: 'hamburger', onClick: this.handleClick },
+                                '\u2630'
+                            ),
+                            this.state.clicked ? _react2.default.createElement(NavList, { 'class': 'phoneMenu' }) : null
                         ),
-                        this.state.clicked ? _react2.default.createElement(NavList, null) : null
-                    ),
-                    _react2.default.createElement(
-                        _reactResponsive2.default,
-                        { minDeviceWidth: 884 },
-                        _react2.default.createElement(NavList, null)
+                        _react2.default.createElement(
+                            _reactResponsive2.default,
+                            { minDeviceWidth: 884 },
+                            _react2.default.createElement(NavList, { 'class': 'desktopMenu' })
+                        )
                     )
                 )
             );
