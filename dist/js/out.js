@@ -31596,8 +31596,16 @@ var MainSection = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },
-                    _react2.default.createElement(_shortcut2.default, { parentClass: 'shortcut', title: 'oferta', img: 'img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' }),
-                    _react2.default.createElement(_shortcut2.default, { parentClass: 'shortcut', title: 'badania projektowe', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' }),
+                    _react2.default.createElement(
+                        _reactRouterDom.Link,
+                        { to: '/' },
+                        _react2.default.createElement(_shortcut2.default, { parentClass: 'shortcut', title: 'oferta', img: 'img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' })
+                    ),
+                    _react2.default.createElement(
+                        _reactRouterDom.Link,
+                        { to: '/' },
+                        _react2.default.createElement(_shortcut2.default, { parentClass: 'shortcut', title: 'badania projektowe', img: './img/art1.jpg', short: 'akdsljfg ajngjakngjka a gjanregan arjgnaejg arneuanae ,asdiawg kajriegjfdg kasjirngakjg asgnakjngr ajgnrjnga' })
+                    ),
                     _react2.default.createElement(
                         _reactRouterDom.Link,
                         { to: '/employees' },

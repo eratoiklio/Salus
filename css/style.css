@@ -110,12 +110,12 @@ h1.banner {
     display: inline-block;
     width: 200px;
     height: 300px;
-    margin: 100px 20px 100px 20px;
+    margin: 100px 20px 0 20px;
     background: #222222;
 }
 /* TODO: nie działa last child(bierze ostani element przed zawinięciem- znaeźć obejście) */
-.shortcut:last-child {
-    margin-bottom:100px;
+.mainSection a:last-child {
+    margin-bottom: 100px;
 }
 
 .shortcut h1 {
@@ -151,7 +151,7 @@ width: 400px;
     background: white;
     border-radius: 3px;
     padding: 0.4rem;
-left: 8rem;
+    left: 8rem;
     position: absolute;
     bottom: 1.4rem;
 
