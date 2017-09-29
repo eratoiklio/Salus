@@ -110,8 +110,12 @@ h1.banner {
     display: inline-block;
     width: 200px;
     height: 300px;
-    margin: 100px 20px;
+    margin: 100px 20px 100px 20px;
     background: #222222;
+}
+/* TODO: nie działa last child(bierze ostani element przed zawinięciem- znaeźć obejście) */
+.shortcut:last-child {
+    margin-bottom:100px;
 }
 
 .shortcut h1 {
@@ -121,7 +125,44 @@ h1.banner {
 .shortcut p, .shortcut h1 {
     padding: 10px;
 }
+.employeesArticle h1{
+margin-top: 20px;
+margin-left: 20px;
+}
+.employeesArticle p{
 
+margin-left: 20px;
+}
+.employeesArticle{
+position: relative;
+width: 400px;
+}
+.employeesArticle img{
+    width:inherit;
+    height:100px;
+}
+/* TODO: wyśrodkować przycisk - jest odsunięty absolotem */
+.employeesArticle .btn
+{
+    display: inline-block;
+
+    color:#333;
+    font-weight: bold;
+    background: white;
+    border-radius: 3px;
+    padding: 0.4rem;
+left: 8rem;
+    position: absolute;
+    bottom: 1.4rem;
+
+
+
+}
+
+.employeesArticle a, .employeesArticle a:link, .employeesArticle a:visited, .employeesArticle a:hover, .employeesArticle a:active
+{
+    color: #333;
+}
 .galleryContainer {
     padding: 50px 0;
     display: flex;

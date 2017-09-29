@@ -41,7 +41,7 @@ export default class GalleryPage extends React.Component
                         <Gallery images={images}/>
                     </div>
                 </div>
-                <div  id="galleryContainer1" className='galleryContainer'>
+                <div  id="galleryContainer3" className='galleryContainer'>
                     <div id="gallery3" className="picture">
                         <div className="galleryTitle">Pokaz</div>
                         <Gallery images={images}/>

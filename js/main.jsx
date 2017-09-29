@@ -20,15 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
     class App extends React.Component {
         render() {
-            // const history = createHistory();
-    //         const HomePage =() =>(
-    //       <Switch>
-    //         <Route exact path='/' component={MainSection} />
-    //         <Route path='/employees' component={Employees}/>
-    //         <Route path='/contact' component={ContactPage}/>
-    //         <Route path='/gallery' component={GalleryPage}/>
-    //       </Switch>
-    //   )
       return <Router>
       <div>
       <Route path='/' component={Header} />

@@ -23,7 +23,7 @@ class NavList extends React.Component
                     <Link to="/employees">personel</Link>
                 </li>
                 <li>
-                    <Link to="/gallery#gallery2">badania projektowe</Link>
+                    <Link to="/">badania projektowe</Link>
                 </li>
                 <li>
                     <Link to="/gallery">galeria</Link>
