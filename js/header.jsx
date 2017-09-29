@@ -116,13 +116,13 @@ export default class Header extends React.Component {
         const style = {
             // minHeight: '100%',
             // minWidth: '100%',
-            width: '100vw',
-            height: '16.667vw',
-            background: 'pink',
+            width: '100%',
+            height: '20rem',
+            background: 'green',
             background: 'url("img/header-image.jpg")',
             backgroundPosition: 'center',
             backgroundRepeat: 'no-repeat',
-            backgroundSize: 'contain'
+            backgroundSize: 'cover'
         };
 
         return (

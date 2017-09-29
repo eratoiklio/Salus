@@ -1,3 +1,6 @@
+html{
+    font-size: 10px;
+}
 body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a {
     margin: 0;
     padding: 0;
@@ -7,7 +10,8 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a {
 
 .container {
     display: block;
-    width: 80vw;
+    max-width: 1200px;
+    min-width: 700px;
     margin: 0 auto;
 }
 
@@ -17,9 +21,11 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a {
 }
 
 .headerMenu {
-    font-size: 14px;
+    /* TODO: to check */
+    font-size: 1.4rem;
     text-transform: uppercase;
-    margin-top: 14px;
+    /* TODO: to check */
+    margin-top: 1.4rem;
     color: #ffffff;
 }
 
@@ -49,7 +55,8 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a {
 
 .headerMenu a {
     display: block;
-    padding: 14px;
+    /* TODO: checked */
+    padding: 1.4rem;
 }
 
 .headerMenu a:link {
@@ -79,7 +86,7 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a {
 #bannerSpace {
     display: flex;
     align-items: center;
-    height: 16.667vw;
+    height: 10vw;
 }
 
 .banner {
@@ -92,7 +99,7 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a {
 h1.banner {
     align-self: center;
     /*display: inline-block;*/
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 .mainSection {
@@ -110,28 +117,30 @@ h1.banner {
     display: inline-block;
     width: 200px;
     height: 300px;
-    margin: 100px 20px 0 20px;
+    margin: 170px 20px 0 20px;
     background: #222222;
 }
-/* TODO: nie działa last child(bierze ostani element przed zawinięciem- znaeźć obejście) */
+
 .mainSection a:last-child {
-    margin-bottom: 100px;
+    margin-bottom: 170px;
 }
 
 .shortcut h1 {
-    font-size: 20px;
+    font-size: 2rem;
 }
-
+.shortcut p {
+    font-size: 1.6rem;
+}
 .shortcut p, .shortcut h1 {
-    padding: 10px;
+    padding: 1.4rem;
 }
 .employeesArticle h1{
-margin-top: 20px;
-margin-left: 20px;
+margin-top: 2rem;
+margin-left: 2rem;
 }
 .employeesArticle p{
 
-margin-left: 20px;
+margin-left: 2rem;
 }
 .employeesArticle{
 position: relative;
@@ -188,9 +197,12 @@ width: 400px;
 .galleryTitle {
     margin: 10px 0;
     color: white;
-    font-size: 1.5vw;
+    font-size: 2rem;
 }
-
+.image-gallery-description
+{
+    font-size: 1.4rem !important;
+}
 .contactArea {
     background: #333333;
     overflow: auto;
@@ -228,6 +240,7 @@ width: 400px;
 
 .half>div p {
     padding: 5px;
+    font-size: 1.6rem;
 }
 
 .contactHeader {
