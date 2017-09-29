@@ -11,7 +11,6 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a {
 .container {
     display: block;
     max-width: 1200px;
-    min-width: 700px;
     margin: 0 auto;
 }
 
@@ -38,12 +37,12 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a {
     display: inline-block;
 }
 
-#hamburger {}
+#hamburger {margin: 1rem}
 
 .phoneMenu {
     position: absolute;
-    top: 30px;
-    right: 5vw;
+    /*top: 30px;*/
+    right: 1rem;
     z-index: 5;
 }
 
@@ -154,7 +153,7 @@ width: 400px;
 .employeesArticle .btn
 {
     display: inline-block;
-
+font-size: 1.4rem;
     color:#333;
     font-weight: bold;
     background: white;
@@ -163,9 +162,10 @@ width: 400px;
     left: 8rem;
     position: absolute;
     bottom: 1.4rem;
-
-
-
+}
+.employeesArticle:last-child
+{
+    margin-bottom: 170px;
 }
 
 .employeesArticle a, .employeesArticle a:link, .employeesArticle a:visited, .employeesArticle a:hover, .employeesArticle a:active
