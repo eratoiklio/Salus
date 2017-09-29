@@ -12052,12 +12052,16 @@ var Shortcut = function (_React$Component) {
             var btn = void 0;
             if (this.props.insideLink != null) {
                 btn = _react2.default.createElement(
-                    _reactRouterHashLink.HashLink,
-                    { to: this.props.insideLink },
+                    'div',
+                    { className: 'articleFooter' },
                     _react2.default.createElement(
-                        'div',
-                        { className: 'btn' },
-                        'Zobacz galeri\u0119'
+                        _reactRouterHashLink.HashLink,
+                        { to: this.props.insideLink },
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'btn' },
+                            'Zobacz galeri\u0119'
+                        )
                     )
                 );
             }

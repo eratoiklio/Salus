@@ -7,9 +7,10 @@ export default class Shortcut extends React.Component
     {let btn;
         if(this.props.insideLink!=null)
         {
-            btn =<Link to={this.props.insideLink}>
+            btn =
+            <div className="articleFooter"><Link to={this.props.insideLink}>
             <div className="btn">Zobacz galerię</div>
-            </Link>
+            </Link></div>
         }
 
         return <article className={this.props.parentClass}>
