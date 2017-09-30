@@ -85,7 +85,7 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a {
 #bannerSpace {
     display: flex;
     align-items: center;
-    height: 10vw;
+    /*height: 10vw;*/
 }
 
 .banner {
@@ -99,13 +99,14 @@ h1.banner {
     align-self: center;
     /*display: inline-block;*/
     font-size: 2rem;
+    padding: 6rem 0;
 }
 
-.mainSection {
+.mainSection, .employeesSection {
     background: #333333;
 }
 
-.mainSection>div {
+.employeesSection>div, .mainSection>div {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -116,14 +117,29 @@ h1.banner {
     display: inline-block;
     width: 200px;
     height: 300px;
-    margin: 170px 20px 0 20px;
     background: #222222;
 }
+.employeesSection .shortcut
+{
+    margin: 170px 20px 0 20px;
 
-.mainSection>div>a:last-child {
+}
+/*dawny margines shortcut*/
+/*margin: 170px 20px 0 20px;*/
+.employeesSection>div>a:last-child {
     margin-bottom: 170px;
 }
+.mainSection a
+{
+    margin-top:170px;
+    height: 300px;
+    
+}
 
+.mainSection a:last-child {
+    margin-bottom: 170px;
+
+}
 .shortcut h1 {
     font-size: 2rem;
 }
@@ -138,7 +154,6 @@ margin-top: 2rem;
 margin-left: 2rem;
 }
 .employeesArticle p{
-
 margin-left: 2rem;
 }
 .employeesArticle{
@@ -151,7 +166,6 @@ width: 400px;
 }
 .articleFooter
 {
-
     position: absolute;
     bottom: 1.4rem;
     width: 100%;
@@ -168,8 +182,6 @@ font-size: 1.4rem;
     background: white;
     border-radius: 3px;
     padding: 0.8rem;
-
-
 }
 .employeesArticle:last-child
 {

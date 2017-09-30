@@ -5,7 +5,7 @@ export default class Employees extends React.Component
 {
     render()
     {
-        return <div className="mainSection">
+        return <div className="employeesSection">
         <div className="container">
         <Shortcut parentClass="employeesArticle shortcut" insideLink="gallery#gallery3" title="Doświadczenie bojowe" img="img/art1.jpg" short="Doświadczenie bojowe (w zakresie C-IED oraz taktyk specjalnych), w tym z Bliskiego Wschodu i Afganistanu"></Shortcut>
         <Shortcut parentClass="employeesArticle shortcut" title="Ochrona VIP" img="./img/art1.jpg" short="Doświadczenie w ochronie VIP m.in.: Jana Pawła II, Margaret Thatcher, Georga Busha i wielu innych osób"></Shortcut>

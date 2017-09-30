@@ -12081,7 +12081,7 @@ var Shortcut = function (_React$Component) {
                     this.props.short
                 ),
                 btn
-            );;
+            );
         }
     }]);
 
@@ -24357,7 +24357,7 @@ var Header = function (_React$Component5) {
                 // minHeight: '100%',
                 // minWidth: '100%',
                 width: '100%',
-                height: '20rem',
+                // height: '20rem',
                 background: 'green'
             }, _defineProperty(_style, 'background', 'url("img/header-image.jpg")'), _defineProperty(_style, 'backgroundPosition', 'center'), _defineProperty(_style, 'backgroundRepeat', 'no-repeat'), _defineProperty(_style, 'backgroundSize', 'cover'), _style);
 
@@ -31682,7 +31682,7 @@ var Employees = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(
                 'div',
-                { className: 'mainSection' },
+                { className: 'employeesSection' },
                 _react2.default.createElement(
                     'div',
                     { className: 'container' },

@@ -18,6 +18,6 @@ export default class Shortcut extends React.Component
         <h1>{this.props.title}</h1>
         <p>{this.props.short}</p>
         {btn}
-        </article>;;
+        </article>;
     }
 }
