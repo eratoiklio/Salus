@@ -14,7 +14,7 @@ class NavList extends React.Component
                     <Link to="/">home</Link>
                 </li>
                 <li>
-                    <Link to="/">misja</Link>
+                    <Link to="/about">o nas</Link>
                 </li>
                 <li>
                     <Link to="/">oferta</Link>

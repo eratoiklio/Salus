@@ -13863,6 +13863,10 @@ var _employees = __webpack_require__(245);
 
 var _employees2 = _interopRequireDefault(_employees);
 
+var _aboutCompany = __webpack_require__(246);
+
+var _aboutCompany2 = _interopRequireDefault(_aboutCompany);
+
 var _reactRouterDom = __webpack_require__(59);
 
 var _createBrowserHistory = __webpack_require__(98);
@@ -13903,6 +13907,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             _reactRouterDom.Switch,
                             null,
                             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _mainSection2.default }),
+                            _react2.default.createElement(_reactRouterDom.Route, { path: '/about', component: _aboutCompany2.default }),
                             _react2.default.createElement(_reactRouterDom.Route, { path: '/employees', component: _employees2.default }),
                             _react2.default.createElement(_reactRouterDom.Route, { path: '/contact', component: _contactPage2.default }),
                             _react2.default.createElement(_reactRouterDom.Route, { path: '/gallery', component: _galleryPage2.default })
@@ -25888,8 +25893,8 @@ var NavList = function (_React$Component) {
                     null,
                     _react2.default.createElement(
                         _reactRouterHashLink.HashLink,
-                        { to: '/' },
-                        'misja'
+                        { to: '/about' },
+                        'o nas'
                     )
                 ),
                 _react2.default.createElement(
@@ -31709,6 +31714,107 @@ var Employees = function (_React$Component) {
 }(_react2.default.Component);
 
 exports.default = Employees;
+
+/***/ }),
+/* 246 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+var _react = __webpack_require__(4);
+
+var _react2 = _interopRequireDefault(_react);
+
+var _reactDom = __webpack_require__(16);
+
+var _reactDom2 = _interopRequireDefault(_reactDom);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var About = function (_React$Component) {
+    _inherits(About, _React$Component);
+
+    function About() {
+        _classCallCheck(this, About);
+
+        return _possibleConstructorReturn(this, (About.__proto__ || Object.getPrototypeOf(About)).apply(this, arguments));
+    }
+
+    _createClass(About, [{
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'aboutSection' },
+                _react2.default.createElement(
+                    'div',
+                    { className: 'container' },
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        _react2.default.createElement(
+                            'b',
+                            null,
+                            'Firma SALUS Taktyka i Technika dla Bezpiecze\u0144stwa'
+                        ),
+                        ' organizuje kursy i szkolenia z zakresu szeroko rozumianego zwalczania zagro\u017Ce\u0144 w sektorze publicznym. Szkolenia wspiera specjalistycznym sprz\u0119tem opracowywanym we w\u0142asnym biurze badawczo - projektowym lub importowanym od renomowanych, gwarantuj\u0105cych pe\u0142ne bezpiecze\u0144stwo u\u017Cytkowania oraz jako\u015B\u0107 i niezawodno\u015B\u0107 produktu, \u015Bwiatowych lider\xF3w w danych obszarach technologicznych. W naszym biurze badawczo-projektowym dokonuje si\u0119 analizy importowanego sprz\u0119tu pod k\u0105tem mo\u017Cliwo\u015Bci jego adaptacji do potrzeb konkretnego odbiorcy lub u\u017Cytkownika. Nasza oferta adresowana jest wy\u0142\u0105cznie do s\u0142u\u017Cb i instytucji pa\u0144stwowych odpowiedzialnych za zapewnienie bezpiecze\u0144stwa obywateli oraz infrastruktury wa\u017Cnej dla funkcjonowania pa\u0144stwa.'
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Firma nasza - poprzez szczeg\xF3lnie staranny dob\xF3r wsp\xF3\u0142pracuj\u0105cego personelu, o wyj\u0105tkowych kwalifikacjach i do\u015Bwiadczeniu - gwarantuje najwy\u017Csze \u015Bwiatowe standardy, w szczeg\xF3lno\u015Bci w nast\u0119puj\u0105cych obszarach bezpiecze\u0144stwa:'
+                    ),
+                    _react2.default.createElement(
+                        'ul',
+                        null,
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'planowanie reakcji na sytuacj\u0119 kryzysow\u0105 z udzia\u0142em uzbrojonego (bro\u0144 palna, materia\u0142y wybuchowe, \u015Brodki toksyczne) przeciwnika, zarz\u0105dzanie oraz dowodzenie akcj\u0105 przeciwkryzysow\u0105 w ww. zakresie'
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'zwalczanie atak\xF3w z u\u017Cyciem improwizowanych urz\u0105dze\u0144 wybuchowych (zar\xF3wno w konktek\u015Bcie dzia\u0142a\u0144 policyjnych, jak i militarnych)'
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'taktyka wojskowych i policyjnych formacji przeciwterrorystycznych'
+                        ),
+                        _react2.default.createElement(
+                            'li',
+                            null,
+                            'u\u017Cycie broni i r\xF3\u017Cnorodnych specjalistycznych \u015Brodk\xF3w walki (r\xF3\u017Cnego typu broni strzeleckiej, w tym karabin\xF3w snajperskich, system\xF3w zdalnego wysadzania, specjalistycznych \u0142adunk\xF3w oraz urz\u0105dze\u0144 wybuchowych itd.).'
+                        )
+                    ),
+                    _react2.default.createElement(
+                        'p',
+                        null,
+                        'Nasze kursy dostosowujemy do konkretnych potrzeb naszych Klient\xF3w - przystosowuj\u0105c ich zakres i charakter do specyfiki odbiorcy: jego struktury organizacyjnej, posiadanego uzbrojenia i wyposa\u017Cenia, realizowanych zada\u0144, uwarunkowa\u0144 prawnych u\u017Cycia si\u0142y itd.'
+                    )
+                )
+            );
+        }
+    }]);
+
+    return About;
+}(_react2.default.Component);
+
+exports.default = About;
 
 /***/ })
 /******/ ]);

@@ -6,6 +6,7 @@ import ContactPage from './contactPage.jsx';
 import GalleryPage from './galleryPage.jsx';
 import MainSection from './mainSection.jsx';
 import Employees from './employees.jsx';
+import About from './aboutCompany.jsx';
 import {BrowserRouter as Router,
 Route,
 IndexLink,
@@ -25,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
       <Route path='/' component={Header} />
       <Switch>
         <Route exact path='/' component={MainSection} />
+        <Route path='/about' component={About}/>
         <Route path='/employees' component={Employees}/>
         <Route path='/contact' component={ContactPage}/>
         <Route path='/gallery' component={GalleryPage}/>
