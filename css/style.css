@@ -78,7 +78,7 @@ body, h1, h2, h2, h4, h5, h6, p, div, ul, li, a {
 
 .footer {
     background: url("../img/header-image.jpg");
-    width: 100vw;
+    width: 100%;
     height: 150px;
 }
 
@@ -133,7 +133,7 @@ h1.banner {
 {
     margin-top:170px;
     height: 300px;
-    
+
 }
 
 .mainSection a:last-child {
@@ -226,13 +226,13 @@ font-size: 1.4rem;
 .contactArea {
     background: #333333;
     overflow: auto;
-    width: 100vw;
+    width: 100%;
 }
 
 .contactContainer {
     display: flex;
     flex-direction: row;
-    background: #222222;
+    justify-content: center;
     margin-top: 100px;
     margin-bottom: 100px;
 }
@@ -241,7 +241,6 @@ font-size: 1.4rem;
     width: 50%;
     background: url('../img/photo2.jpg');
     height: 500px;
-    display: flex;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -252,6 +251,7 @@ font-size: 1.4rem;
     padding: 50px;
     background: #222222;
     color: white;
+
 }
 
 .half>div {
